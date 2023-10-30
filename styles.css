@@ -1,0 +1,85 @@
+/* Wildcard selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Class selector */
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.design-selection {
+  padding-bottom: 30px;
+}
+
+.design-archives {
+  padding-bottom: 30px;
+}
+
+/* ID selector */
+#zen-intro {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/* Child selector */
+.explanation>p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Descendant selector */
+.summary a {
+  color: #4d94ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.summary a:hover {
+  color: #66b3ff;
+}
+
+/* :nth-child() selector */
+main>div:nth-child(2n) {
+  background-color: #333333;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #4d4d4d;
+}
+
+/* Attribute selector */
+[title] {
+  color: #d592d0;
+}
+
+/* First-of-type selector */
+section:first-of-type {
+  background-image: linear-gradient(to bottom, #000000, #1a1a1a);
+}
+
+/* Last-of-type selector */
+footer a:last-of-type {
+  color: #4d94ff;
+}
+
+/* :has() selector */
+.page-wrapper::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+}
